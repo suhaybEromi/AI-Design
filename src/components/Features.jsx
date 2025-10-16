@@ -9,10 +9,6 @@ import bigIcon from "../assets/big-icon.svg";
 import { FaArrowRight } from "react-icons/fa";
 import { BsStars } from "react-icons/bs";
 
-{
-  /* Stop Responsive code 150 */
-}
-
 export default function Features() {
   return (
     <section id="features" className="my-30 text-center">
@@ -56,7 +52,7 @@ export default function Features() {
             Intelligent Writing Assistance
           </h1>
           <p className="text-gray-400">
-            Our AI writing tool analyzes your content, suggests improvements,
+            Our AI writing tool analyzes your content, suggests improvements
           </p>
         </div>
 
@@ -147,12 +143,11 @@ export default function Features() {
         </div>
       </div>
 
-      {/* Stop Responsive */}
-      <div className="grid grid-cols-2 border border-violet-950 mx-auto w-300 rounded-3xl mt-30 p-10">
-        <div className="col-span-1 my-auto text-left">
+      <div className="grid grid-cols-2 border border-violet-950 mx-auto w-75 md:w-185 lg:w-250 xl:w-300 rounded-3xl mt-30 p-10">
+        <div className="col-span-2 md:col-span-1 my-auto text-left">
           <p
             className="text-center rounded-full border-t-2 border-l-2 border-r-2 border-b-2 border-purple-950 border-b-transparent
-        hover:border-2 hover:shadow-sm hover:border-purple-900 hover:shadow-purple-900 p-2 w-60
+        hover:border-2 hover:shadow-sm hover:border-purple-900 hover:shadow-purple-900 p-2 w-56 
          transition-all text-purple-300 hover:text-white flex items-center justify-center"
           >
             <BsStars className="w-5 h-5 mr-1" />
@@ -161,7 +156,7 @@ export default function Features() {
           <h1 className="text-white font-poppins text-3xl font-semibold mt-4 mb-2">
             Intelligent Writing Assistance
           </h1>
-          <p className="text-gray-400">
+          <p className="text-gray-400 ">
             Our AI writing tool is designed to empower you with exceptional
             writing capabilities, making the writing process...
           </p>
@@ -176,20 +171,26 @@ export default function Features() {
           </button>
         </div>
 
-        <div className="col-span-1">
-          <img src={bigIcon} alt="big-icon" className="w-100 ms-20" />
+        <div className="hidden md:block md:col-span-1">
+          <img src={bigIcon} alt="big-icon" className="w-100 ms-16" />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 mx-auto w-300 mt-5">
-        <div className="col-span-1 p-13 w-170 border border-violet-950 rounded-3xl">
+      <div
+        className="grid grid-cols-2 mx-auto md:w-210 lg:w-250 xl:w-300 mt-8
+        justify-items-center md:justify-items-start"
+      >
+        <div
+          className="col-span-2 md:col-span-1 p-13 w-75 sm:w-90 md:w-100 lg:w-140 xl:w-170 
+          ms-2 mb-5 border border-violet-950 rounded-3xl"
+        >
           <img
             src={iconFive}
             alt="icon-five"
-            className="w-20 border-white rounded-full p-5 bg-linear-to-bl from-indigo-950 to-gray-800"
+            className="w-20 border-white rounded-full p-5 bg-gradient-to-bl from-indigo-950 to-gray-800"
           />
 
-          <h1 className="text-white font-poppins text-xl text-start font-semibold mt-15 mb-2">
+          <h1 className="text-white font-poppins text-xl text-start font-semibold mt-10 mb-2">
             Empowering Writing Excellence
           </h1>
           <p className="text-gray-400 text-start">
@@ -198,14 +199,17 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="col-span-1 ms-30 p-13 w-120 border border-violet-950 rounded-3xl">
+        <div
+          className="col-span-2 md:col-span-1 ms-2 lg:ms-30 p-13 w-75 sm:w-90 md:w-82 lg:w-90 xl:w-120 
+          border border-violet-950 rounded-3xl"
+        >
           <img
             src={iconSeven}
             alt="icon-seven"
-            className="w-20 border-white rounded-full p-5 bg-linear-to-bl from-indigo-950 to-gray-800"
+            className="w-20 border-white rounded-full p-5 bg-gradient-to-bl from-indigo-950 to-gray-800"
           />
 
-          <h1 className="text-white font-poppins text-xl text-start font-semibold mt-15 mb-2">
+          <h1 className="text-white font-poppins text-xl text-start font-semibold mt-10 mb-2">
             Grammar and Spell Check
           </h1>
           <p className="text-gray-400 text-start">
