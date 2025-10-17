@@ -6,7 +6,7 @@ const listStyle = "flex items-center gap-4";
 export default function PriceCard({ title, price, img }) {
   return (
     <div>
-      <div className="rounded-2xl border border-violet-950 w-80 md:w-80 lg:w-80 xl:w-95 p-7 bg-linear-to-t from-violet-950 to-slate-950">
+      <div className="rounded-2xl border border-violet-950 w-77 md:w-80 lg:w-80 xl:w-95 p-7 bg-linear-to-t from-violet-950 to-slate-950">
         <div className="text-white flex justify-between items-center text-3xl font-semibold">
           {title}
           <img src={img} alt={title} />

@@ -1,6 +1,6 @@
 export default function UserCard({ username, lastname, img }) {
   return (
-    <div className="col-span-1 text-white border-slate-900 p-8 rounded-2xl bg-linear-to-bl from-slate-950 to-violet-950">
+    <div className="text-white border-slate-900 p-8 rounded-2xl bg-linear-to-bl from-slate-950 to-violet-950">
       <div className="flex">
         <img src={img} alt={username} />
         <p className="ms-4">

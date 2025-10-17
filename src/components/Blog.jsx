@@ -16,44 +16,51 @@ export default function Blog() {
           <BsStars className="w-5 h-5 mr-1" />
           Read Our Latest Blogs
         </p>
-        <h1 className="text-[50px] font-poppins font-bold leading-snug text-white">
+        <h1 className="text-[30px] md:text-[50px] font-poppins font-bold leading-snug text-white">
           Latest Blogs & News
         </h1>
-        <span className="text-[16px] font-poppins text-gray-400 mt-1">
+        <p className="text-[14px] md:text-[16px] font-poppins text-center text-gray-400 mt-1">
           Our AI writing tool is designed to empower you with exceptional
-          writing capabilities, making <br />
-          <p className="text-center mt-1">
+          writing capabilities, making
+          <span className="block">
             the writing process more efficient, accurate, and enjoyable.
-          </p>
-        </span>
+          </span>
+        </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-15 w-300 mx-auto text-white">
-        <BlogCard
-          firstSkill="Design"
-          secondSkill="Engineering"
-          title="Revolution in Content Creation and Communication"
-          username="Alex Demo"
-          date="25 Mar, 2025"
-          img={blogFirst}
-        />
+      <div className="grid grid-cols-6 gap-6 w-75 md:w-175 lg:w-250 xl:w-300 mx-auto text-white">
+        <div className="col-span-6 md:col-span-3 lg:col-span-2">
+          <BlogCard
+            firstSkill="Design"
+            secondSkill="Engineering"
+            title="Revolution in Content Creation and Communication"
+            username="Alex Demo"
+            date="25 Mar, 2025"
+            img={blogFirst}
+          />
+        </div>
 
-        <BlogCard
-          firstSkill="Security"
-          secondSkill="Development"
-          title="How AI Writing Tools Empower Writers to Speed up there Writing"
-          username="Hendary Jonson"
-          date="12 Feb, 2025"
-          img={blogTwo}
-        />
-        <BlogCard
-          firstSkill="Products"
-          secondSkill="Blog and articles"
-          title="Revolution in Content Creation and Communication"
-          username="Piter Mecraow"
-          date="10 Jan, 2025"
-          img={blogThree}
-        />
+        <div className="col-span-6 md:col-span-3 lg:col-span-2">
+          <BlogCard
+            firstSkill="Security"
+            secondSkill="Development"
+            title="How AI Writing Tools Empower Writers to Speed up there Writing"
+            username="Hendary Jonson"
+            date="12 Feb, 2025"
+            img={blogTwo}
+          />
+        </div>
+
+        <div className="col-span-6 md:col-span-3 lg:col-span-2">
+          <BlogCard
+            firstSkill="Products"
+            secondSkill="Blog and articles"
+            title="Revolution in Content Creation and Communication"
+            username="Piter Mecraow"
+            date="10 Jan, 2025"
+            img={blogThree}
+          />
+        </div>
       </div>
     </section>
   );

@@ -10,22 +10,26 @@ export default function BlogCard({
   date,
 }) {
   return (
-    <div className="grid grid-cols-3 gap-10 w-300 mx-auto text-white">
-      <div className="col-span-1">
+    <div className="gap-10 text-white">
+      <div>
         <img
           src={img}
           alt={title}
           className="h-48 w-96 hover:scale-105 transition-transform duration-500"
         />
+
         <button className="cursor-pointer rounded-full border-1 border-purple-950 w-25 mt-4 mr-3 p-1">
           {firstSkill}
         </button>
+
         <button className="cursor-pointer rounded-full border-1 border-purple-950 w-37 mt-4 p-1">
           {secondSkill}
         </button>
-        <h1 className="text-white font-poppins text-[23px] font-semibold mt-3 mb-3">
+
+        <h1 className="text-white font-poppins text-[18px] md:text-[20px] font-semibold mt-3 mb-3">
           {title}
         </h1>
+
         <p className="text-gray-400">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's.
